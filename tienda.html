@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Descubre los cheesecakes fríos de Softy Cakes. Elige entre nuestros sabores de limón y frutos rojos y sus presentaciones pequeña y grande.">
+    <meta name="theme-color" content="#fffaf6">
+    <title>Tienda | Softy Cakes - Cheesecakes fríos</title>
+    <link rel="stylesheet" href="tienda.css">
+        <script src="tienda.js" defer ></script>
+        <!--este link es para los iconos para la pagina de tienda de Softy Cakes -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="pagina-tienda">
+
+    <header class="encabezado">
+
+        <div class="identidad-marca">
+            <img
+                src="logo-chiskey.jpeg"
+                alt="Logo de Softy Cakes"
+                class="logo logo-empresa">
+
+            <div class="titulo identidad-texto">
+                <p class="nombre-empresa">Softy Cakes</p>
+                <p class="subtitulo-empresa">Cheesecakes fríos ♡</p>
+            </div>
+            </div>
+
+
+        <nav class="menu-navegacion" aria-label="Menú principal">
+
+            <ul class="lista-navegacion">
+
+                <li class="elemento-navegacion">
+                    <a href="index.html" class="enlace-navegacion">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="elemento-navegacion">
+                    <a href="nosotros.html" class="enlace-navegacion">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li class="elemento-navegacion">
+                    <a href="contactenos.html" class="enlace-navegacion">
+                        Contáctenos
+                    </a>
+                </li>
+
+                <li class="elemento-navegacion">
+                    <a href="galeria.html" class="enlace-navegacion">
+                        Galería
+                    </a>
+                </li>
+
+                <li class="elemento-navegacion">
+                    <a href="tienda.html"
+                        class="enlace-navegacion activo"
+                        aria-current="page">
+                        Tienda
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="acciones-tienda">
+
+            <button
+                type="button"
+                class="boton-icono-tienda boton-busqueda"
+                id="boton-busqueda"
+                aria-label="Abrir buscador"
+                aria-expanded="false"
+                aria-controls="buscador-tienda">
+
+                <i class="fa-solid fa-magnifying-glass"
+                    aria-hidden="true"></i>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="boton-icono-tienda boton-carrito"
+                id="boton-carrito"
+                aria-label="Abrir carrito de compras"
+                aria-expanded="false"
+                aria-controls="panel-carrito">
+
+                <i class="fa-solid fa-bag-shopping"
+                    aria-hidden="true"></i>
+
+                <span
+                    class="contador-carrito"
+                    id="contador-carrito"
+                    aria-label="Cantidad total de unidades">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <section
+        class="buscador-tienda"
+        id="buscador-tienda"
+        aria-label="Buscar productos"
+        hidden>
+
+        <form
+            class="formulario-busqueda"
+            id="formulario-busqueda"
+            role="search">
+
+            <label
+                for="buscador-productos"
+                class="etiqueta-buscador">
+
+                Encuentra tu cheesecake favorito
+
+            </label>
+
+            <div class="campo-busqueda">
+
+                <i class="fa-solid fa-magnifying-glass"
+                    aria-hidden="true"></i>
+
+                <input
+                    type="search"
+                    id="buscador-productos"
+                    name="busqueda"
+                    placeholder="Busca limón o frutos rojos..."
+                    autocomplete="off">
+
+                <button
+                    type="button"
+                    class="boton-limpiar-busqueda"
+                    id="limpiar-busqueda"
+                    aria-label="Limpiar búsqueda">
+
+                    <i class="fa-solid fa-xmark"
+                        aria-hidden="true"></i>
+
+                </button>
+
+            </div>
+
+            <p class="resultado-busqueda" id="resultado-busqueda"
+                aria-live="polite"></p>
+
+        </form>
+
+    </section>
+
+
+    <main class="contenido-principal contenido-tienda">
+        <section class="portada-tienda seccion-portada-tienda">
+
+            <div class="contenido-portada-tienda">
+
+                <p class="etiqueta-tienda">
+                    Un capricho hecho con amor
+                </p>
+
+                <span class="adorno-portada-tienda"
+                    aria-hidden="true">❧</span>
+
+                <h1 class="titulo-portada-tienda">
+                    Un pequeño placer,
+                    <span>hecho para ti.</span>
+                </h1>
+
+                <p class="texto-portada-tienda">
+                    Descubre nuestros cheesecakes fríos,
+                    preparados con dedicación y pensados para
+                    convertir tus pequeños momentos en algo especial.
+                </p>
+
+                <a
+                    href="#catalogo-cheesecakes"
+                    class="boton-tienda boton-principal-tienda">
+
+                    Descubrir sabores
+
+                    <i class="fa-solid fa-arrow-down"
+                        aria-hidden="true"></i>
+
+                </a>
+
+                <p class="nota-portada-tienda">
+                    Dos sabores irresistibles. Un mismo amor por lo dulce.
+                </p>
+
+            </div>
+
+
+         <div class="contenedor-imagen-tienda contenedor-video-tienda">
+
+           <video
+            class="foto-portada-tienda video-portada-tienda"
+            autoplay
+            muted
+            loop
+            playsinline
+            controls
+            preload="metadata"
+            poster="video-publicitario.jpg"
+            aria-label="Video publicitario de los cheesecakes fríos de Softy Cakes">
+
+             <source
+               src="video-publicitario.mp4"
+               type="video/mp4">
+
+             Tu navegador no puede reproducir este video.
+             Puedes conocer nuestros productos en el catálogo.
+
+             </video>
+
+          <span class="sello-portada-tienda">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            Hecho con amor
+          </span>
+
+           <span
+           class="decoracion-corazon-tienda"
+           aria-hidden="true">♡</span>
+
+          </div>
+
+        </section>
+
+
+        <section
+            class="beneficios-tienda"
+            aria-label="Características de nuestros productos">
+
+            <article class="beneficio-tienda">
+
+                <span class="icono-beneficio-tienda"
+                    aria-hidden="true">
+                    <i class="fa-solid fa-snowflake"></i>
+                </span>
+
+                <div class="contenido-beneficio-tienda">
+                    <h2 class="titulo-beneficio-tienda">
+                        Cheesecakes fríos
+                    </h2>
+
+                    <p>Deliciosos postres sin horno.</p>
+                </div>
+
+            </article>
+
+
+            <article class="beneficio-tienda">
+
+                <span class="icono-beneficio-tienda"
+                    aria-hidden="true">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+
+                <div class="contenido-beneficio-tienda">
+                    <h2 class="titulo-beneficio-tienda">
+                        Preparados con amor
+                    </h2>
+
+                    <p>Cuidamos cada detalle.</p>
+                </div>
+
+            </article>
+
+
+            <article class="beneficio-tienda">
+
+                <span class="icono-beneficio-tienda"
+                    aria-hidden="true">
+                    <i class="fa-solid fa-gift"></i>
+                </span>
+
+                <div class="contenido-beneficio-tienda">
+                    <h2 class="titulo-beneficio-tienda">
+                        Dos tamaños
+                    </h2>
+
+                    <p>Elige el que prefieras.</p>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section
+            class="catalogo-tienda"
+            id="catalogo-cheesecakes">
+
+            <header class="encabezado-catalogo-tienda">
+
+                <p class="etiqueta-catalogo-tienda">
+                    Nuestra selección
+                </p>
+
+                <span class="linea-catalogo-tienda"
+                    aria-hidden="true"></span>
+
+                <h2 class="titulo-catalogo-tienda">
+                    Nuestros cheesecakes
+                </h2>
+
+                <p class="texto-catalogo-tienda">
+                    Dos sabores, dos tamaños y una experiencia
+                    deliciosa para disfrutar.
+                </p>
+
+                <div class="resumen-catalogo-tienda">
+
+                    <span>
+                        <i class="fa-solid fa-heart"
+                            aria-hidden="true"></i>
+                        2 sabores
+                    </span>
+
+                    <span class="separador-resumen"
+                        aria-hidden="true">·</span>
+
+                    <span>2 tamaños disponibles</span>
+
+                </div>
+
+            </header>
+
+            <!-- Tarjetas de productos -->
+            <div class="productos-tienda" id="productos-tienda">
+
+                <article
+                    class="producto-tienda tarjeta-producto producto-frutos-rojos"
+                    data-id="frutos-rojos"
+                    data-producto="cheesecake frutos rojos fresa frutilla mermelada"
+                    data-precio-pequeno="1.50"
+                    data-precio-grande="3.00">
+
+                    <div class="imagen-producto-tienda">
+
+                        <img
+                            src="cheesecake1.jpg"
+                            alt="Cheesecake de frutos rojos"
+                            class="foto-producto-tienda"
+                            loading="lazy">
+
+                        <span class="etiqueta-sabor-tienda">
+                            Frutal y cremoso
+                        </span>
+
+                        <span
+                            class="decoracion-producto-tienda"
+                            aria-hidden="true">♡</span>
+
+                    </div>
+
+
+                    <div class="informacion-producto-tienda">
+
+                        <p class="categoria-producto-tienda">
+                            NUESTROS SABORES
+                        </p>
+
+                        <h3 class="nombre-producto-tienda">
+                            Cheesecake de frutos rojos
+                        </h3>
+
+                        <p class="descripcion-producto-tienda">
+                            Un cheesecake frío y cremoso acompañado
+                            de mermelada de frutos rojos y el toque
+                            fresco de la frutilla.
+                        </p>
+
+
+                        <!-- Presentación según el tamaño -->
+                        <div class="detalle-presentacion-producto">
+
+                            <span class="icono-detalle-producto"
+                                aria-hidden="true">
+                                <i class="fa-solid fa-spoon"></i>
+                            </span>
+
+                            <div>
+                                <p class="titulo-detalle-producto">
+                                    Nuestra presentación
+                                </p>
+
+                                <p
+                                    class="texto-detalle-producto"
+                                    id="detalle-frutos-rojos"
+                                    aria-live="polite">
+
+                                    Mermelada de frutos rojos y
+                                    frutilla en trocitos.
+
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Selector de tamaño -->
+                        <div class="selector-tamano-producto">
+
+                            <label for="tamano-frutos-rojos">
+                                Elige tu tamaño
+                            </label>
+
+                            <div class="campo-tamano-producto">
+
+                                <i class="fa-solid fa-box"
+                                    aria-hidden="true"></i>
+
+                                <select
+                                    id="tamano-frutos-rojos"
+                                    class="select-tamano-producto"
+                                    name="tamano-frutos-rojos"
+                                    data-producto="frutos-rojos"
+                                    aria-describedby="detalle-frutos-rojos">
+
+                                    <option value="pequeno" selected>
+                                        Envase pequeño
+                                    </option>
+
+                                    <option value="grande">
+                                        Envase grande
+                                    </option>
+
+                                </select>
+
+                                <i class="fa-solid fa-chevron-down flecha-select-producto"
+                                    aria-hidden="true"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Precio -->
+                        <div class="precio-producto-tienda">
+
+                            <span class="etiqueta-precio-producto">
+                                Precio
+                            </span>
+
+                            <span
+                                class="valor-precio-producto"
+                                id="precio-frutos-rojos">
+
+                                Por definir
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- Añadir al carrito -->
+                        <button
+                            type="button"
+                            class="boton-agregar-carrito"
+                            data-agregar="frutos-rojos">
+
+                            <i class="fa-solid fa-bag-shopping"
+                                aria-hidden="true"></i>
+
+                            Añadir al carrito
+
+                            <i class="fa-solid fa-arrow-right flecha-agregar"
+                                aria-hidden="true"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="producto-tienda tarjeta-producto producto-limon"
+                    data-id="limon"
+                    data-producto="cheesecake limon limón ralladura citrico cítrico"
+                    data-precio-pequeno="1.00"
+                    data-precio-grande="2.50">
+
+                    <div class="imagen-producto-tienda">
+
+                        <img
+                            src="cheesecake2.jpg"
+                            alt="Cheesecake de limón con ralladura"
+                            class="foto-producto-tienda"
+                            loading="lazy">
+
+                        <span class="etiqueta-sabor-tienda">
+                            Fresco y delicado
+                        </span>
+
+                        <span
+                            class="decoracion-producto-tienda"
+                            aria-hidden="true">♡</span>
+
+                    </div>
+
+
+                    <div class="informacion-producto-tienda">
+
+                        <p class="categoria-producto-tienda">
+                            NUESTROS SABORES
+                        </p>
+
+                        <h3 class="nombre-producto-tienda">
+                            Cheesecake de limón
+                        </h3>
+
+                        <p class="descripcion-producto-tienda">
+                            Una combinación cremosa y refrescante,
+                            terminada con ralladura de limón
+                            para darle un toque cítrico especial.
+                        </p>
+
+
+                        <!-- Presentación -->
+                        <div class="detalle-presentacion-producto">
+
+                            <span class="icono-detalle-producto"
+                                aria-hidden="true">
+                                <i class="fa-solid fa-lemon"></i>
+                            </span>
+
+                            <div>
+                                <p class="titulo-detalle-producto">
+                                    Nuestra presentación
+                                </p>
+
+                                <p
+                                    class="texto-detalle-producto"
+                                    id="detalle-limon"
+                                    aria-live="polite">
+
+                                    Decorado con ralladura de limón.
+
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Selector de tamaño -->
+                        <div class="selector-tamano-producto">
+
+                            <label for="tamano-limon">
+                                Elige tu tamaño
+                            </label>
+
+                            <div class="campo-tamano-producto">
+
+                                <i class="fa-solid fa-box"
+                                    aria-hidden="true"></i>
+
+                                <select
+                                    id="tamano-limon"
+                                    class="select-tamano-producto"
+                                    name="tamano-limon"
+                                    data-producto="limon"
+                                    aria-describedby="detalle-limon">
+
+                                    <option value="pequeno" selected>
+                                        Envase pequeño
+                                    </option>
+
+                                    <option value="grande">
+                                        Envase grande
+                                    </option>
+
+                                </select>
+
+                                <i class="fa-solid fa-chevron-down flecha-select-producto"
+                                    aria-hidden="true"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Precio -->
+                        <div class="precio-producto-tienda">
+
+                            <span class="etiqueta-precio-producto">
+                                Precio
+                            </span>
+
+                            <span
+                                class="valor-precio-producto"
+                                id="precio-limon">
+
+                                Por definir
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- Añadir al carrito -->
+                        <button
+                            type="button"
+                            class="boton-agregar-carrito"
+                            data-agregar="limon">
+
+                            <i class="fa-solid fa-bag-shopping"
+                                aria-hidden="true"></i>
+
+                            Añadir al carrito
+
+                            <i class="fa-solid fa-arrow-right flecha-agregar"
+                                aria-hidden="true"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Mensaje cuando la búsqueda no encuentra resultados -->
+            <p
+                class="mensaje-sin-resultados"
+                id="mensaje-sin-resultados"
+                role="status"
+                hidden>
+
+                No encontramos cheesecakes con ese nombre.
+                Prueba con otro sabor.
+
+            </p>
+
+        </section>
+
+
+        <section class="mensaje-final-tienda">
+
+            <span class="adorno-final-tienda"
+                aria-hidden="true">❧</span>
+
+            <p class="etiqueta-final-tienda">
+                Un dulce momento
+            </p>
+
+            <h2 class="titulo-final-tienda">
+                Los pequeños placeres merecen disfrutarse.
+            </h2>
+
+            <p class="texto-final-tienda">
+                Gracias por elegir Softy Cakes y permitirnos
+                formar parte de tus momentos especiales.
+            </p>
+
+            <a
+                href="contactenos.html"
+                class="boton-contacto-tienda">
+
+                ¿Tienes alguna consulta?
+
+                <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i>
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <button
+        type="button"
+        class="fondo-carrito"
+        id="fondo-carrito"
+        aria-label="Cerrar carrito"
+        hidden>
+    </button>
+
+
+    <aside
+        class="panel-carrito"
+        id="panel-carrito"
+        aria-labelledby="titulo-carrito"
+        aria-hidden="true"
+        hidden>
+
+        <div class="encabezado-carrito">
+
+            <div class="identidad-carrito">
+
+                <span class="icono-encabezado-carrito"
+                    aria-hidden="true">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </span>
+
+                <div>
+                    <p class="etiqueta-encabezado-carrito">
+                        SOFTY CAKES
+                    </p>
+
+                    <h2 id="titulo-carrito">
+                        Tu carrito
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="boton-cerrar-carrito"
+                id="cerrar-carrito"
+                aria-label="Cerrar carrito">
+
+                <i class="fa-solid fa-xmark"
+                    aria-hidden="true"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Productos añadidos mediante JavaScript -->
+        <div class="contenido-carrito">
+
+            <div
+                class="mensaje-carrito-vacio"
+                id="mensaje-carrito-vacio">
+
+                <span class="icono-carrito-vacio"
+                    aria-hidden="true">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </span>
+
+                <h3>Tu carrito está esperando</h3>
+
+                <p>
+                    Todavía no has añadido ningún cheesecake.
+                    ¡Elige tu sabor favorito!
+                </p>
+
+                <button
+                    type="button"
+                    class="boton-seguir-comprando"
+                    id="seguir-comprando">
+
+                    Explorar la tienda
+
+                </button>
+
+            </div>
+
+
+            <ul
+                class="lista-productos-carrito"
+                id="lista-carrito"
+                aria-label="Productos del carrito">
+            </ul>
+
+        </div>
+
+
+        <!-- Resumen de compra -->
+        <div class="resumen-carrito" id="resumen-carrito">
+
+            <div class="fila-resumen-carrito">
+
+                <span>Unidades</span>
+
+                <span id="subtotal-productos">0</span>
+
+            </div>
+
+            <div class="fila-total-carrito">
+
+                <span>Total</span>
+
+                <span id="total-carrito">
+                    Por definir
+                </span>
+
+            </div>
+
+            <p class="nota-total-carrito">
+                El total se calculará según el tamaño
+                y el precio de cada cheesecake.
+            </p>
+
+            <button
+                type="button"
+                class="boton-finalizar-pedido"
+                id="finalizar-pedido"
+                disabled>
+
+                <i class="fa-brands fa-whatsapp"
+                    aria-hidden="true"></i>
+
+                Preparar mi pedido
+
+            </button>
+
+            <p class="nota-seguridad-carrito">
+                <i class="fa-solid fa-heart"
+                    aria-hidden="true"></i>
+
+                Gracias por elegir Softy Cakes.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <footer class="pie-pagina pie-pagina-tienda">
+
+        <div class="identidad-footer">
+
+            <span
+                class="icono-footer icono-ultimo"
+                aria-hidden="true">♡</span>
+
+            <p class="nombre-footer">
+                Softy Cakes
+            </p>
+
+            <span class="subtitulo-footer final">
+                CHEESECAKES FRÍOS
+            </span>
+
+        </div>
+
+
+        <div class="frase-footer-tienda">
+
+            <span aria-hidden="true">♡</span>
+
+            <p>
+                Un dulce detalle, un recuerdo especial.
+            </p>
+
+            <span aria-hidden="true">♡</span>
+
+        </div>
+
+
+        <!-- Redes sociales exclusivas de la tienda -->
+        <div class="redes-sociales-tienda"
+            aria-label="Redes sociales de Softy Cakes">
+
+            <a
+                href="https://www.instagram.com/"
+                class="enlace-social-tienda"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de Softy Cakes"
+                title="Instagram">
+
+                <i class="fa-brands fa-instagram"
+                    aria-hidden="true"></i>
+
+            </a>
+
+            <a
+                href="https://www.tiktok.com/"
+                class="enlace-social-tienda"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok de Softy Cakes"
+                title="TikTok">
+
+                <i class="fa-brands fa-tiktok"
+                    aria-hidden="true"></i>
+
+            </a>
+
+            <a
+                href="https://wa.me/593983791529"
+                class="enlace-social-tienda"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Contactar a Softy Cakes por WhatsApp"
+                title="WhatsApp">
+
+                <i class="fa-brands fa-whatsapp"
+                    aria-hidden="true"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="derechos-footer derechos-footer-tienda">
+
+            <p class="texto-derechos">
+                &copy; 2026 Softy Cakes. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+</body>
+</html>
